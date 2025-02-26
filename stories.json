@@ -1,0 +1,33 @@
+{
+    "start": {
+        "text": "You wake up in a mysterious forest. What do you do?",
+        "choices": [
+            { "text": "Explore the forest", "next": "forest" },
+            { "text": "Stay where you are", "next": "stay" }
+        ]
+    },
+    "forest": {
+        "text": "You find a hidden cave. Do you enter?",
+        "choices": [
+            { "text": "Enter the cave", "next": "cave" },
+            { "text": "Go back", "next": "start" }
+        ]
+    },
+    "stay": {
+        "text": "You wait for hours... but nothing happens.",
+        "choices": [
+            { "text": "Change your mind and explore", "next": "forest" }
+        ]
+    },
+    "cave": {
+        "text": "Inside the cave, you find a treasure chest!",
+        "choices": [
+            { "text": "Open it", "next": "treasure" },
+            { "text": "Leave the cave", "next": "forest" }
+        ]
+    },
+    "treasure": {
+        "text": "Congratulations! You found the hidden treasure. The end.",
+        "choices": []
+    }
+}
